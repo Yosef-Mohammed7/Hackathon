@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+{% load bootstrap4 %}
+
+{% block content %}
+<br><br>
+<div class="d-flex justify-content-center">
+<div class="card text-center " style="width: 18rem;">
+    <div class="card-body">
+      <p class="card-text">جاري الفحص ......</p>
+    </div>
+          <a  href="{% url 'user:home' %}">الى الخلف </a>
+
+  </div>
+</div>
+<br><br>
+{% endblock %}

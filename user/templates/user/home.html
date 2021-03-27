@@ -1,0 +1,30 @@
+{% extends "base_generic.html" %}
+{% load bootstrap4 %}
+{% block content %}
+{%load static %}
+<div class="card text-center">
+    <div class="card-header">
+      الخطوة الاولى 
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">البداية </h5>
+      <p class="card-text">يجيب التأكد من وجود موعد الخاص بالمراجع ..</p>
+      <a href="{% url 'user:go_to' %}" class="btn btn-primary"> ابدأ الفحص</a>
+    </div>
+   
+  </div>
+  <br>
+
+  <div class="card text-center">
+    <div class="card-header">
+الخطوى الثانية 
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">الحفظ والتقعيم  </h5>
+      <p class="card-text"> سيتمم في هذه الخطوة حفظ العينة وتغليفه وتعقيمها </p>
+      <a href="{% url 'user:start' %}" class="btn btn-primary">احفظ</a>
+    </div>
+   
+  </div>
+  <br>
+{% endblock %}
